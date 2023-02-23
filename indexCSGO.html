@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/x-icon" href="images/logocsgo.ico">
+  <script src="https://kit.fontawesome.com/6e3f26b09e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href= "css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <title>CS:GO Cybersport</title>
+  <link rel="stylesheet" href="css/styleCSGO.css">
+</head>
+<body>
+
+<div class = "container">
+<header class = "header">
+  <nav>
+    <div class="logo">CS:GO NEWS</div>
+    <div class="menu">
+      <ul>
+        <li><a href="#" onmousedown="button.play(1)" onclick="slowScroll('#first')">Cybersport in CS:GO</a></li>
+        <li><a href="#" onmousedown="button.play(1)" onclick="slowScroll('#second')">2022 Best Teams</a></li>
+        <li><a href="#" onmousedown="button.play(1)" onclick="slowScroll('#third')">2022 Best Players</a></li>
+        <li><a href="#" onmousedown="button.play(1)" onclick="slowScroll('#fourth')">2022 Tournaments Winners</a></li>
+        <li><a href="#" onmousedown="button.play(1)" onclick="slowScroll('#sixth')">Pro Player's image classification</a></li>
+        <li><a href="#" onmousedown="button.play(1)" onclick="slowScroll('#fifth')">About Us</a></li>
+        <li><a href="/register">Sign Up</a></li>
+      </ul>
+    </div>
+    <div class="burger-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </nav>
+</header>
+    <div id="intro">
+      <h2>WELCOME</h2>
+      <h3>CS:GO NEWS WEBSITE</h3>
+  </div>
+
+      <div id="first">
+      <div class="jumbotron-fluid">
+    <div class="container-fluid">
+    <h1 class="display-4">ABOUT CYBERSPORT IN CS:GO</h1>
+    <p class="lead">Esports is a team or individual competition based on computer video games. There are a huge number of games in this area, such as: Counter-Strike, Dota 2, League of Legends, PUBG, Fortnite, Valorant and other popular games that have their own rules. Each discipline has its own stars, for example, in Counter-Strike, Oleksandr "s1mple" Kostyliev is considered the best player of all time, and in Dota 2 one of the best is Johan "N0tail" Sundstein. In this website you will dive into the fascinating world of esports in the discipline of Counter-Strike : Global Offensive. Global Offensive has one of the most popular esport scenes in the world. The Global Offensive professional scene consists of leagues and tournaments hosted by third-party organisations, and Valve-sponsored tournaments known as Major Championships. Majors are considered the most prestigious tournaments in Counter-Strike circuit and have among the largest prize pools; originally announced at $250,000, the prize pools for Majors have risen to $1,000,000 since MLG Columbus 2016. After that, one of the largest prize funds grew to $ 1,250,000 at PGL Major Stockholm 2021, and this major tournament was won by Natus Vincere, who broke the record. Astralis is the most successful Global Offensive team of all time, with the core members of that team winning four Majors together.
+    </p>
+  </div>
+</div>
+</div>
+
+
+  <div id="second">
+  <div class="container">
+  <h2>2022 BEST TEAMS</h2>
+  <p>According to HLTV.ORG (Top 30 best teams at this moment)</p>
+    <p>This ranking will be updated automatically every Monday (by team results)</p>
+  <table class="table-bordered">
+    <thead>
+      <tr>
+        <th>Logo</th>
+        <th>Ranking</th>
+        <th>Team Name</th>
+      </tr>
+    </thead>
+    <tbody id = 'teams-output'>
+    </tbody>
+  </table>
+</div>
+</div>
+
+
+<div id="third">
+  <h6>2022 BEST PLAYERS</h6>
+  <p>According to HLTV.ORG (Top 20 best players 2022)</p>
+                  <p class="news-block">
+                    1. <img alt="Ukraine" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/2560px-Flag_of_Ukraine.svg.png" class="flag" title="Ukraine" width="50" height = "30"> Oleksandr <a href="#popupSimple" class="popup-link"><font color = "gold">"s1mple"</font></a> Kostyliev
+                    <br>2. <img alt="France" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1024px-Flag_of_France.svg.png" class="flag" title="France" width="50" height = "30"> Mathieu <a href="#popupZywoo" class="popup-link" rel="nofollow noreferrer"><font color = "silver">"&NoBreak;ZywOo&NoBreak;"</font></a> Herbaut
+                    <br>3. <img alt="Russia" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/640px-Flag_of_Russia.svg.png" class="flag" title="Russia" width="50" height = "30"> Dmitry <a href="#popupShiro" class="popup-link" rel="nofollow noreferrer"><font color ="bronze">"sh1ro"</font></a> Sokolov
+                    <br>4. <img alt="Russia" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/640px-Flag_of_Russia.svg.png" class="flag" title="Russia" width="50" height = "30"> Sergey <a href="#popupAxile" class="popup-link" rel="nofollow noreferrer">"Ax1le"</a> Rykhtorov
+                    <br>5. <img alt="Bosnia and Herzegovina" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/2560px-Flag_of_Bosnia_and_Herzegovina.svg.png" class="flag" title="Bosnia and Herzegovina" width="50" height = "30"> Nikola <a href="#popupNiko" class="popup-link"  rel="nofollow noreferrer">"NiKo"</a> Kovač
+                    <br>6. <img alt="Latvia" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Latvia.svg/2560px-Flag_of_Latvia.svg.png" class="flag" title="Latvia" width="50" height = "30"> Helvijs <a href="#popupBroky" class="popup-link" rel="nofollow noreferrer">"broky"</a> Saukants
+                    <br>7. <img alt="Russia" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/640px-Flag_of_Russia.svg.png" class="flag" title="Russia" width="50" height = "30"> Ilya <a href="#popupM0nesy" class="popup-link" rel="nofollow noreferrer">"mONESY"</a> Osipov
+                    <br>8. <img alt="Estonia" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flag_of_Estonia.svg/2560px-Flag_of_Estonia.svg.png" class="flag" title="Estonia" width="50" height = "30"> Robin <a href="#popupRopz" class="popup-link" rel="nofollow noreferrer">"ropz"</a> Kool
+                    <br>9. <img alt="Brazil" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/640px-Flag_of_Brazil.svg.png" class="flag" title="Brazil" width="50" height = "30"> Kaike <a href="#popupKscerato" class="popup-link" rel="nofollow noreferrer">"KSCERATO"</a> Cerato
+                    <br>10. <img alt="Denmark" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/1280px-Flag_of_Denmark.svg.png" class="flag" title="Denmark" width="50" height = "30"> Martin <a href="#popupStavn" class="popup-link" rel="nofollow noreferrer">"stavn"</a> Lund
+                    <br>11. <img alt="Canada" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg" class="flag" title="Canada" width="55" height = "30"> Russel <a href="#popupTwistzz" class="popup-link" rel="nofollow noreferrer">"Twistzz"</a> Van Dulken
+                    <br>12. <img alt="Denmark" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/1280px-Flag_of_Denmark.svg.png" class="flag" title="Denmark" width="50" height = "30"> Benjamin <a href="#popupBlameF" class="popup-link" rel="nofollow noreferrer">"blameF"</a> Bremer
+                    <br>13. <img alt="Norway" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/1280px-Flag_of_Norway.svg.png" class="flag" title="Norway" width="50" height = "30"> Håvard <a href="#popupRain" class="popup-link" rel="nofollow noreferrer">"rain"</a> Nygaard
+                    <br>14. <img alt="Bosnia and Herzegovina" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/2560px-Flag_of_Bosnia_and_Herzegovina.svg.png" class="flag" title="Bosnia and Herzegovina" width="50" height = "30"> Nemanja <a href="#popupHunter" class="popup-link" rel="nofollow noreferrer">"huNter-"</a> Kovač
+                    <br>15. <img alt="Latvia" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Latvia.svg/2560px-Flag_of_Latvia.svg.png" class="flag" title="Latvia" width="50" height = "30"> Mareks <a href="#popupYekindar" class="popup-link"  rel="nofollow noreferrer">"YEKINDAR"</a> Gaļinskis
+                    <br>16. <img alt="Ukraine" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/2560px-Flag_of_Ukraine.svg.png" class="flag" title="Ukraine" width="50" height = "30"> Valeriy <a href="#popupBit" class="popup-link">"b1t"</a> Vakhovskiy
+                    <br>17. <img alt="Slovakia" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Slovakia.svg/1920px-Flag_of_Slovakia.svg.png" class="flag" title="Slovakia" width="55" height = "30"> David <a href="#popupFrozen" class="popup-link" rel="nofollow noreferrer">"frozen"</a> Čerňanský
+                    <br>18. <img alt="Israel" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/1280px-Flag_of_Israel.svg.png" class="flag" title="Israel" width="50" height = "30"> Lotan <a href="#popupSpinx" class="popup-link" rel="nofollow noreferrer">"Spinx"</a> Giladi
+                    <br>19. <img alt="Brazil" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/640px-Flag_of_Brazil.svg.png" class="flag" title="Brazil" width="50" height = "30"> Yuri <a href="#popupYuurih" class="popup-link" rel="nofollow noreferrer">"yuurih"</a> Santos
+                    <br>20. <img alt="Russia" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/640px-Flag_of_Russia.svg.png" class="flag" title="Russia" width="50" height = "30">  Dzhami <a href="#popupJame" class="popup-link"  rel="nofollow noreferrer">"&NoBreak;Jame&NoBreak;"</a> Ali
+</div>
+  <div id="fourth">
+    <h1>2022 BIG EVENTS WINNERS</h1>
+    <h2>All big events (ESL, IEM, PGL, Blast tournaments) champions</h2>
+    <h2>Tournaments MVP (Most Valuable Player)</h2>
+    <table class="table table-sm">
+      <thead>
+      <tr>
+        <th scope="col">Logo</th>
+        <th scope="col">Tournament Name</th>
+        <th scope="col">Date</th>
+        <th scope="col">Prize Pool</th>
+        <th scope="col">Location</th>
+        <th scope="col">Winner</th>
+        <th scope="col">MVP</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row"><img alt="BLAST Premier World Final 2022" src = "/images/blastWorldFinal.png" width="42" height="50"></th>
+        <td>BLAST Premier: World Final 2022</td>
+        <td>Dec 14 - 18, 2022</td>
+        <td>$1,000,000</td>
+        <td><img alt="UAE" title = "United Arab Emirates" src = "https://www.hltv.org/img/static/flags/30x20/AE.gif" width="30" height="20"> Abu Dhabi</td>
+        <td><img alt="G2" title = "G2" src = "https://img-cdn.hltv.org/teamlogo/zFLwAELOD15BjJSDMMNBWQ.png?ixlib=java-2.1.0&w=50&s=affb583e6716d8ee904826992255cc4b" width="50" height="50"></td>
+        <td>Ilya "m0NESY" Osipov</td>
+      </tr>
+      <tr>
+        <th scope="row"><img alt="BLAST Premier Fall Finals 2022" src = "https://img-cdn.hltv.org/eventlogo/O8dyTstiXZp1wPIcOGi_GC.png?ixlib=java-2.1.0&s=c414e930b554c2cba8f1098fa3619d51" width="52" height="52"></th>
+        <td>BLAST Premier: Fall Finals 2022</td>
+        <td>Nov 23 - 27, 2022</td>
+        <td>$425,000</td>
+        <td><img alt="DK" title = "Denmark" src = "https://www.hltv.org/img/static/flags/30x20/DK.gif" width="30" height="20"> Copenhagen</td>
+        <td><img alt="Heroic" title = "Heroic" src = "https://img-cdn.hltv.org/teamlogo/Q6BGM_VQRz8Y9m3UgaqiUx.svg?ixlib=java-2.1.0&s=9424e99a6d77c8f154ea2d74175b3e17" width="53" height="53"></td>
+        <td>Helvijs "broky" Saukants</td>
+      </tr>
+      <tr bgcolor="#FFD957">
+        <th scope="row"><img alt="IEM RIO Major 2022" src = "https://img-cdn.hltv.org/eventlogo/nYADQoBBHeOXRjBW1kFOra.png?ixlib=java-2.1.0&w=200&s=9951330163ee8e7abf56775d5ee517e3" width="50" height="50"></th>
+        <td>IEM Rio Major 2022</td>
+        <td>Oct 31 - Nov 13, 2022</td>
+        <td>$1,250,000</td>
+        <td><img alt="BR" title = "Brazil" src = "https://www.hltv.org/img/static/flags/30x20/BR.gif" width="30" height="20"> Rio de Janeiro</td>
+        <td><img alt="OUT" title = "Outsiders" src = "https://img-cdn.hltv.org/teamlogo/K15IzjKuVPxnoWr3J3-tJ7.png?ixlib=java-2.1.0&w=50&s=d87bd1cf1f3835f152b363eecd95e3fe" width="50" height="50"></td>
+        <td>Dzhami "&NoBreak;Jame&NoBreak;" Ali</td>
+      </tr>
+      <tr>
+        <th scope="row"><img alt="ESL Pro League Season 16" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/ESL_Pro_League_logo.svg/1200px-ESL_Pro_League_logo.svg.png" width="40" height="50"></th>
+        <td>ESL Pro League Season 16</td>
+        <td>Aug 31 - Oct 02, 2022</td>
+        <td>$835,000</td>
+        <td><img alt="MT" title = "Malta" src = "https://www.hltv.org/img/static/flags/30x20/MT.gif" width="30" height="20"> Malta</td>
+        <td><img alt="VITA" title = "Vitality" src = "https://img-cdn.hltv.org/teamlogo/GAlByJtDTnkgbb9p_71SUL.png?ixlib=java-2.1.0&w=50&s=2838cd78a5ebb5c9fea4c485908e9dbb" width="50" height="50"></td>
+        <td>Mathieu "ZywOo" Herbaut</td>
+      </tr>
+      <tr>
+        <th scope="row"><img alt="IEM Cologne 2022" src = "https://img-cdn.hltv.org/eventlogo/nYADQoBBHeOXRjBW1kFOra.png?ixlib=java-2.1.0&w=200&s=9951330163ee8e7abf56775d5ee517e3" width="50" height="50"></th>
+        <td>IEM Cologne 2022</td>
+        <td>Jul 05 - 17, 2022</td>
+        <td>$1,000,000</td>
+        <td><img alt="DE" title = "Germany" src = "https://www.hltv.org/img/static/flags/30x20/DE.gif" width="30" height="20"> Cologne</td>
+        <td><img alt="Faze" title = "FaZe" src = "https://img-cdn.hltv.org/teamlogo/SMhzsxzbkIrgqCOOKGRXlW.svg?ixlib=java-2.1.0&s=e6a9ce0345c7d703e5eaac14307f69aa" width="50" height="50"></td>
+        <td>Oleksandr "&NoBreak;s1mple&NoBreak;" Kostyliev</td>
+      </tr>
+      <tr>
+        <th scope="row"><img alt="Roobet Cup 2022" src = "https://img-cdn.hltv.org/eventlogo/eN9gsvpPL8UH1EVxx3dkYV.png?ixlib=java-2.1.0&w=200&s=bc33b10660c139fda9307ce61938e998" width="50" height="50"></th>
+        <td>Roobet Cup 2022</td>
+        <td>Jun 22 - 30, 2022</td>
+        <td>$250,000</td>
+        <td><img alt="EU" title = "Europe" src = "https://www.hltv.org/img/static/flags/30x20/EU.gif" width="30" height="20"> Europe(Online)</td>
+        <td><img alt="BIG" title = "BIG" src = "https://upload.wikimedia.org/wikipedia/ru/4/4c/BIG_2020_lightmode.png" width="35" height="51"></td>
+        <td>Florian "syrsoN" Rische</td>
+      </tr>
+      <tr>
+        <th scope="row"><img alt="BLAST Premier Spring Finals 2022" src = "https://img-cdn.hltv.org/eventlogo/O8dyTstiXZp1wPIcOGi_GC.png?ixlib=java-2.1.0&s=c414e930b554c2cba8f1098fa3619d51" width="52" height="52"></th>
+        <td>BLAST Premier: Spring Finals 2022</td>
+        <td>Jun 15 - 19, 2022</td>
+        <td>$425,000</td>
+        <td><img alt="PT" title = "Portugal" src = "https://www.hltv.org/img/static/flags/30x20/PT.gif" width="30" height="20"> Lisbon</td>
+        <td><img alt="NAVI" title = "Natus Vincere" src = "https://img-cdn.hltv.org/teamlogo/9iMirAi7ArBLNU8p3kqUTZ.svg?ixlib=java-2.1.0&s=4dd8635be16122656093ae9884675d0c" width="53" height="53"></td>
+        <td>Oleksandr "s1mple" Kostyliev</td>
+      </tr>
+      <tr>
+        <th scope="row"><img alt="IEM Dallas 2022" src = "https://img-cdn.hltv.org/eventlogo/nYADQoBBHeOXRjBW1kFOra.png?ixlib=java-2.1.0&w=200&s=9951330163ee8e7abf56775d5ee517e3" width="50" height="50"></th>
+        <td>IEM Dallas 2022</td>
+        <td>May 30 - Jun 05, 2022</td>
+        <td>$250,000</td>
+        <td><img alt="USA" title = "United States of America" src = "https://www.hltv.org/img/static/flags/30x20/US.gif" width="30" height="20"> Dallas, TX</td>
+        <td><img alt="C9" title = "Cloud9" src = "https://img-cdn.hltv.org/teamlogo/bEgST6XoNV4ZdenRKzCQyl.svg?ixlib=java-2.1.0&s=bd9b10a8dfe7b3640103745687389e3c" width="50" height="50"></td>
+        <td>Sergey "&NoBreak;Ax1le&NoBreak;" Rykhtorov</td>
+      </tr>
+      <tr bgcolor="#FFD957">
+        <th scope="row"><img alt="PGL Major Antwerp 2022" src = "https://img-cdn.hltv.org/eventlogo/NYf0zt_ZEL19qct3ZHccJ9.png?ixlib=java-2.1.0&w=200&s=67daecdd41b9e7692533a541dd566c55" width="53" height="53"></th>
+        <td>PGL Major Antwerp 2022</td>
+        <td>May 09 - 22, 2022</td>
+        <td>$1,000,000</td>
+        <td><img alt="BE" title = "Belgium" src = "https://www.hltv.org/img/static/flags/30x20/BE.gif" width="30" height="20"> Antwerp</td>
+        <td><img alt="Faze" title = "FaZe" src = "https://img-cdn.hltv.org/teamlogo/SMhzsxzbkIrgqCOOKGRXlW.svg?ixlib=java-2.1.0&s=e6a9ce0345c7d703e5eaac14307f69aa" width="50" height="50"></td>
+        <td>Håvard "rain" Nygaard</td>
+      </tr>
+      <tr>
+        <th scope="row"><img alt="ESL Pro League Season 15" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/ESL_Pro_League_logo.svg/1200px-ESL_Pro_League_logo.svg.png" width="40" height="50"></th>
+        <td>ESL Pro League Season 15</td>
+        <td>Mar 09 - Apr 10, 2022</td>
+        <td>$823,000</td>
+        <td><img alt="DE" title = "Germany" src = "https://www.hltv.org/img/static/flags/30x20/DE.gif" width="30" height="20"> Düsseldorf</td>
+        <td><img alt="Faze" title = "FaZe" src = "https://img-cdn.hltv.org/teamlogo/SMhzsxzbkIrgqCOOKGRXlW.svg?ixlib=java-2.1.0&s=e6a9ce0345c7d703e5eaac14307f69aa" width="50" height="50"></td>
+        <td>Robin "ropz" Kool</td>
+      </tr>
+      <tr>
+        <th scope="row"><img alt="IEM Katowice 2022" src = "https://img-cdn.hltv.org/eventlogo/nYADQoBBHeOXRjBW1kFOra.png?ixlib=java-2.1.0&w=200&s=9951330163ee8e7abf56775d5ee517e3" width="50" height="50"></th>
+        <td>IEM Katowice 2022</td>
+        <td>Feb 15 - 27, 2022</td>
+        <td>$1,000,000</td>
+        <td><img alt="PL" title = "Poland" src = "https://www.hltv.org/img/static/flags/30x20/PL.gif" width="30" height="20"> Katowice</td>
+        <td><img alt="Faze" title = "FaZe" src = "https://img-cdn.hltv.org/teamlogo/SMhzsxzbkIrgqCOOKGRXlW.svg?ixlib=java-2.1.0&s=e6a9ce0345c7d703e5eaac14307f69aa" width="50" height="50"></td>
+        <td>Helvijs "broky" Saukants</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="sixth">
+    <h1>CS:GO PRO PLAYER'S IMAGE CLASSIFICATION</h1>
+    <h2>Predicting the pro player by his face</h2>
+    <div class="tfjs-example-container">
+      <section>
+        <p class='section-head' style="display: none">Status</p>
+        <div id="status" style="display: none"></div>
+      </section>
+
+      <section>
+
+        <div id="file-container" style="display: none">
+         <input type="file" id="files" name="files[]" />
+        </div>
+
+        <div id="predictions">
+
+					<div class="pred-container">
+
+						<div class="img__result">
+							<div class="pred__sup-title"></div>
+							<img id="cat" src="ML/s1.png" />
+						</div>
+
+						<div class="pred__result">
+							<h1 class="rowPapa__title">s1mple</h1>
+
+							<div class="rowPapa">
+								<div class="row">
+									<div class="cell">s1mple</div>
+									<div class="cell">0.733</div>
+								</div>
+								<div class="row">
+									<div class="cell">ZywOo</div>
+									<div class="cell">0.224</div>
+								</div>
+								<div class="row">
+									<div class="cell">electronic</div>
+									<div class="cell">0.031</div>
+								</div>
+								<div class="row">
+									<div class="cell">device</div>
+									<div class="cell">0.007</div>
+								</div>
+								<div class="row">
+									<div class="cell">NiKo</div>
+									<div class="cell">0.005</div>
+								</div>
+							</div>
+						
+						</div>
+
+					</div>
+					
+				</div>
+
+
+      </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+
+      <!--The path to the js file, thanks to which I can make predictions on the pro players photos-->
+      <script src="js/indexML.js"></script>
+    </div>
+    </div>
+
+  <div id="fifth">
+    <h1>ABOUT US</h1>
+<footer class="page-footer font-small teal pt-4">
+<div class="container-fluid text-center text-md-left">
+  <div class="row">
+    <div class="col-md-6 mt-md-0 mt-3">
+      <h5 class="text-uppercase font-weight-bold"><font face = "Bebas Neue" size ="7">Abdurakhim Bakytzhan</font></h5>
+      <h5 class="text-uppercase font-weight-bold"><font face = "Bebas Neue" size ="6">Fullstack (Backend + Frontend) developer</font></h5>
+      <h5 class="text-uppercase font-weight-bold"><font face = "Fjalla One" size ="5">Contacts</font></h5>
+      <font face= "Raleway">
+        <ol class = "socialnetworks">
+    <i class="fa-brands fa-telegram"></i> Telegram
+          <br>@abak1ng
+    <br> <i class="fa-solid fa-envelope"></i> Email
+          <br>bakytzhanabdu@gmail.com
+    <br> <i class="fa-brands fa-discord"></i> Discord
+          <br>Abdu#4761
+        </ol>
+      </font>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mt-md-0 mt-3">
+      <h5 class="text-uppercase font-weight-bold"><font face = "Bebas Neue" size ="7">Temirlan Torebekov</font></h5>
+      <h5 class="text-uppercase font-weight-bold"><font face = "Bebas Neue" size ="6">Database administrator</font></h5>
+      <h5 class="text-uppercase font-weight-bold"><font face = "Fjalla One" size ="5">Contacts</font></h5>
+      <font face= "Raleway">
+        <ol class = "socialnetworks">
+    <i class="fa-brands fa-telegram"></i> Telegram
+          <br>@parmegano_regano
+        </ol>
+      </font>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mt-md-0 mt-3">
+      <h5 class="text-uppercase font-weight-bold"><font face = "Bebas Neue" size ="7">Nurultan Tynyshbay</font></h5>
+      <h5 class="text-uppercase font-weight-bold"><font face = "Bebas Neue" size ="6">Frontend developer</font></h5>
+      <h5 class="text-uppercase font-weight-bold"><font face = "Fjalla One" size ="5">Contacts</font></h5>
+      <font face= "Raleway">
+        <ol class = "socialnetworks">
+    <i class="fa-brands fa-telegram"></i> Telegram
+          <br>@Just_Tnnl
+        </ol>
+      </font>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mt-md-0 mt-3">
+      <h5 class="text-uppercase font-weight-bold"><font face = "Bebas Neue" size ="7">Adina Mazova</font></h5>
+      <h5 class="text-uppercase font-weight-bold"><font face = "Bebas Neue" size ="6">UI/UX designer</font></h5>
+      <h5 class="text-uppercase font-weight-bold"><font face = "Fjalla One" size ="5">Contacts</font></h5>
+      <font face= "Raleway">
+        <ol class = "socialnetworks">
+    <i class="fa-brands fa-telegram"></i> Telegram
+          <br>@adinamazova
+        </ol>
+      </font>
+    </div>
+  </div>
+</div>
+<div class="footer-copyright text-center py-3"><font face= "Barlow"><i class="fa-solid fa-copyright"></i> 2023 Copyright:
+  <a href="/"> CSGO.news</a></font>
+</div>
+</footer>
+</div>
+</div>
+</body>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+<!-- The Cursor -->
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+<div id= "popupSimple" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img ">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/W-jvvDDmP6huxd9XOiHR-V.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=5f7461f79a2c8717674104606de154a2" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+<div id= "popupZywoo" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/OXHSfm95I3Ln24kZWrjpez.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=dabef869c538efd7b83ea9f30744aded" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+<div id= "popupNiko" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/mBHcn_dxncT98R_w_oIlt-.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=6f5ccfd1fba411384b66d35a65bd26be" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+<div id= "popupShiro" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/7XhmWfrnX0U97vLnD7lOIG.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=1df4b229436ca7d807a709bafde9e4ec" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+<div id= "popupAxile" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/ATHWnFtmsmX_WbwMuzziH-.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=a18b0c9343633956f2c4fa07e16df83b" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+<div id= "popupFrozen" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/GFrVFjUHkQxHyUrdv8t4sy.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=c7a1e1ead70bcab6e672efe3098f9cb6" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+<div id= "popupM0nesy" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/BlJtAtand7q3PloIJLxH87.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=7f8c83d283b8a0107bbc72e63f6331af" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+<div id= "popupYekindar" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/t6UR9QYSOvXKkDQte47B6q.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=02d67b3e1012767da22e3802fd55dec3" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+<div id= "popupBit" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/yTmSYYSGV8qkYIBthg96C-.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=70f203a258b95fbd4a0caf620f87818f" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id= "popupJame" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/2F4R0tNpJKs7eMyfDGyQTV.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=5f62c2cd4559ebf2e2c7008adbad83ce" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id= "popupRain" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/PcXrIoexWzJwXyfTF6fDYl.png?auto=compress&ixlib=java-2.1.0&w=1200&s=edc4f59afecc72f30b516a6f39e0639d" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id= "popupHunter" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/h_RP_MteUtwi_1IlQgDCpq.png?auto=compress&ixlib=java-2.1.0&w=1200&s=cbd8cde827e673c331ff2d1c9e9173c7" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id= "popupBlameF" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/otPio5QS5fgUis0vMzodUo.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=8e4067ba321e77f04600939cad451336" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id= "popupSpinx" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/FxHcsKQo8tDuWKL1QuT1k7.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=fa22efc5375c1411514e80b3fe27c8ff" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id= "popupKscerato" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/NiH7C25vpoLRVJMoRBkO2B.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=62ceb3153fea2868054b6ac94b0cac69" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id= "popupStavn" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/1h_aO_eBMdXkS9Eihi01Vh.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=5916f4bb67be5f8a6cc79f6b2bd0fa2c" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id= "popupTwistzz" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/-s6eVq-9PGCldLL0ZWz-T2.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=3eb62ed320e30c71066305b56fe4dd6a" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id= "popupRopz" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/ICwmhwl1Ix5EdBMrcXd9fs.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=e964442b5682f42465a1ed814d5576e9" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id= "popupYuurih" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/Ph-stEOr8Gd1L0PyXVpraV.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=9f2623bf1d9835b6434664bb2549533e" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id= "popupBroky" class="popup">
+  <a href="#about" class="popup__Area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+        <div class="popup_img">
+          <img class="popimg" src="https://img-cdn.hltv.org/gallerypicture/IhMdB_iuG5B_Tg6p_sIjgG.jpg?auto=compress&ixlib=java-2.1.0&w=1200&s=deb07fb45dab8215735731a3a398e698" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tone/0.8.0/Tone.min.js'></script>
+<script src = "js/mouseparticles.js"></script>
+    <script src = "js/indexCSGO.js"></script>
+    <script src = "js/teams.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      function slowScroll(id) {
+        $('html, body').animate({
+          scrollTop: $(id).offset().top
+        }, 500);
+      }
+
+      $(document).on("scroll", function() {
+        if($(window).scrollTop() === 0)
+          $("header").removeClass("fixed");
+        else
+          $("header").attr("class", "fixed");
+      });
+    </script>
+</html>

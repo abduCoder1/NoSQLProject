@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/logocsgo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>CS:GO Cybersport Admin Panel</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body style="color: white; background-color: #1d2630">
+    <div class ="container mt-5">
+      <div class="text-center">
+        <h1 class="display-5 mb-5" style="font-size: 40px;"><strong>User Details</strong></h1>
+      </div>
+      <div class="main row justify-content-center" style="font-size: 15px;">
+        <div class="col-10 mb-3">
+          <form method="post" action="/admin/update/<%= user._id %>">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input class="form-control" type="text" id="fullName" name="fullName" placeholder="Enter Full Name" value="<%= user.fullName %>" required>
+            </div>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input class="form-control" type="text" id="username" name="username" placeholder="Enter User Name" value="<%= user.username %>" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input class="form-control" type="email" id="email" name="email" placeholder="Enter Email" value="<%= user.email %>" required>
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number</label>
+              <input class="form-control" type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number" value="<%= user.phoneNumber %>" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input class="form-control" type="password" id="password" name="password" placeholder="Enter New Password" required>
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select id="gender" class="form-control" name="gender">
+                <option value="male" <%= user.gender === 'male' ? 'selected' : '' %>>Male</option>
+                <option value="female" <%= user.gender === 'female' ? 'selected' : '' %>>Female</option>
+              </select>
+            </div>
+            <div class = "col-10 mb-3">
+            <button type="submit" style="margin: 10px;margin-left: -2px;position: absolute;" class="btn btn-success add-btn">Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+   </style>
+  </html>
